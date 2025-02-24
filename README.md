@@ -18,7 +18,7 @@ You can train all these models using the training.py script. The training hyperp
 | ResNet | | resnet20, resnet32(), plain20(), plain32(), resnet110() |
 
 The best results on CIFAR10 are as follows:
-| Hyperparameter | Papers | This Repository |
+| Hyperparameter | [Papers](https://arxiv.org/abs/1512.03385) | This Repository |
 |:-------:|:-------:|:-------:|
 | Model | ResNet110 | ResNet110 |
 | Learning Rate | 0.1 | 0.1 |
