@@ -16,3 +16,20 @@ You can train all these models using the training.py script. The training hyperp
 | AlexNet | AlexNet | |
 | VGGNet | | VGG16_CIFAR10 |
 | ResNet | | resnet20, resnet32(), plain20(), plain32(), resnet110() |
+
+The best results on CIFAR10 are as follows:
+| Hyperparameter | Papers | This Repository |
+|:-------:|:-------:|
+| Model | ResNet110 | ResNet110 |
+| Learning Rate | 0.1 | 0.1 |
+| Batch Size | 128 | 128 |
+| Num Epochs (iterations) | (64000) | 164 (64000) |
+| Momentum | 0.9 | 0.9 |
+| Weight Decay | 0.0001 | 0.0001 |
+| Optimizer | SGD | SGD |
+| Lr Scheduler(parameters:value) | MultiStepLR(milestones:32000, 48000; factor:0.1) | MultiStepLR(milestones:32000, 48000; factor:0.1) |
+| Criterion | CrossEntropyLoss | CrossEntropyLoss |
+| Data Augmentation | RandomCrop, RandomHorizontalFlip | RandomCrop, RandomHorizontalFlip, RandomAugment(magnitude:7) |
+| Training Time | | 23930.03 seconds |
+
+![ResNet110 Loss Curve](./images/resnet110-loss-curve.png)
