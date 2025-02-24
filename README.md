@@ -30,6 +30,9 @@ The best results on CIFAR10 are as follows:
 | Lr Scheduler(parameters:value) | MultiStepLR(milestones:32000, 48000; factor:0.1) | MultiStepLR(milestones:32000, 48000; factor:0.1) |
 | Criterion | CrossEntropyLoss | CrossEntropyLoss |
 | Data Augmentation | RandomCrop, RandomHorizontalFlip | RandomCrop, RandomHorizontalFlip, RandomAugment(magnitude:7) |
-| Training Time | | 23930.03 seconds |
 
 ![ResNet110 Loss Curve](./images/resnet110-loss-curve.png)
+| Lass Test Accuracy | 94.48% |
+| Training Time | | 23930.03 seconds |
+|:-------:|:-------:|
+
