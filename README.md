@@ -35,6 +35,3 @@ The best results on CIFAR10 are as follows:
 | Lass Test Accuracy | 94.48% |
 |:-------:|:-------:|
 
-| Training Time | 23930.03 seconds |
-|:-------:|:-------:|
-
